@@ -1,0 +1,88 @@
+.gradient-text {
+  font-size: 7vw; /* adjust size */
+  font-weight: 700;
+  line-height: 1.2;
+
+  background: linear-gradient(
+    90deg,
+    #d946ef 0%,
+    /* pink/purple */ #f97316 40%,
+    /* orange */ #ef4444 100% /* red */
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
+  /* Makes gradient look smooth */
+  background-size: 200% auto;
+}
+
+h3 {
+  color: white;
+  font-size: smaller;
+}
+
+.slider0-container {
+  width: 90%;
+  margin: auto;
+}
+.show-buttons {
+  position: relative;
+  bottom: 0px;
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+.hide-buttons {
+  position: relative;
+  bottom: -400px;
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+
+  background: linear-gradient(
+    105.65deg,
+    rgba(150, 52, 136, 0.2) 0.15%,
+    rgba(252, 111, 50, 0.2) 130.58%,
+    rgba(255, 74, 89, 0.2) 263.64%
+  );
+  border-radius: 91px;
+
+  width: 500.32px;
+  height: 77px;
+
+  font-family: "Inter";
+  font-style: normal;
+  line-height: 0px;
+  text-align: center;
+
+  color: #ffffff;
+  & h1 {
+    font-size: larger;
+    font-weight: bold;
+  }
+  & h2 {
+    font-size: large;
+    font-weight: lighter;
+  }
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 90%;
+  padding: 20px;
+  height: 200px;
+  gap: 10px;
+  align-items: center;
+  margin: auto;
+}

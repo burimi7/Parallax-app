@@ -1,0 +1,91 @@
+body {
+  color: #fff;
+  font-family: "Inter", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #181b22; /* slightly lighter dark */
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+thead th {
+  padding: 14px 10px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 14px;
+  color: #aaa;
+}
+
+tbody tr {
+  border-bottom: 1px solid #2a2d35;
+  height: 75px;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+tbody td {
+  padding: 14px 10px;
+  font-size: 14px;
+  color: #e0e0e0;
+}
+
+.rank {
+  text-align: center;
+  font-weight: bold;
+  width: 40px;
+}
+
+.model {
+  font-weight: 500;
+  color: #fff;
+}
+
+.up {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.down {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.row{
+display: flex
+;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+h2{
+  font-weight: 100;
+}
+
+.slider3-container{
+  height: 100%;
+}
+
+.table-container{
+  height: 65%;
+    overflow-y: auto;
+}
+
+.scroll-container{
+  width: 100%;
+  text-align: end;
+}

@@ -1,0 +1,32 @@
+.ecosystem-banner {
+  background: linear-gradient(to right, #000000 20%, #0a0a0f 100%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.ecosystem-banner h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.ecosystem-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.ecosystem-logos img {
+  height: 40px;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* makes logos white if needed */
+  transition: transform 0.2s ease-in-out;
+}
+
+.ecosystem-logos img:hover {
+  transform: scale(1.1);
+}
