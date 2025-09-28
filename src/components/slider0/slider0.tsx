@@ -1,5 +1,4 @@
 import "../../index.css";
-import Slider1 from "../slider1/slider1";
 import "./slider0.css";
 
 function Slider0({partialStep}:any) {

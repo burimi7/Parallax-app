@@ -3,13 +3,13 @@ import "../../index.css";
 import "./slider3.css";
 
 function Slider3() {
-  const tableContainerRef = useRef(null);
+  const tableContainerRef = useRef<HTMLDivElement | null>(null);
   const [isBottomScrolled, setIsBottomScrolled] = useState(false);
 
   const scrollToBottom = () => {
     if (tableContainerRef.current) {
-      tableContainerRef.current.scrollTo({
-        top: tableContainerRef.current.scrollHeight,
+      tableContainerRef.current?.scrollTo({
+        top: tableContainerRef.current?.scrollHeight,
         behavior: "smooth",
       });
       setIsBottomScrolled(true);

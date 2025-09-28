@@ -106,12 +106,13 @@ function App() {
 
       {/* Slides container */}
       <div ref={containerRef} className="slides-container">
-        {slides.map((text, index) => (
+        {slides.map((text:string, index:number) => (
           <div key={index} className="slide">
             {index === 0 && <Slider0 partialStep={partialStep} />}
             {index === 1 && <Slider1 />}
             {index === 2 && <Slider2 />}
             {index === 3 && <Slider3 />}
+            {index === 3 && text}
           </div>
         ))}
       </div>
